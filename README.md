@@ -1,1 +1,2 @@
-# Proyecto-de-la-Uni
+Solo click en el .py
+
