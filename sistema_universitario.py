@@ -244,7 +244,7 @@ class Sistema:
         }
 
 
-# INTERFAZ GRÁFICA CON PyQt5
+# INTERFAZ GRÁFICA CON PyQt5 
 
 class MainWindow(QtWidgets.QMainWindow):
     def __init__(self):
@@ -537,7 +537,6 @@ class MainWindow(QtWidgets.QMainWindow):
         # Distribución de usuarios por tipo (gráfico simple)
         dist_group = QtWidgets.QGroupBox("Distribución por Tipo de Usuario")
         dist_layout = QtWidgets.QVBoxLayout()
-        
         self.distribucion_text = QtWidgets.QTextEdit()
         self.distribucion_text.setReadOnly(True)
         self.distribucion_text.setMaximumHeight(150)
@@ -568,7 +567,7 @@ class MainWindow(QtWidgets.QMainWindow):
     
     def setup_ui(self):
         """Configuración inicial de la interfaz"""
-        self.setWindowTitle("Sistema de Gestión Universitaria - POO")
+        self.setWindowTitle("Sistema de Gestión Universitaria")
         
         # Si se cargó desde .ui, conectar los elementos
         if hasattr(self, 'btnRegistrar'):
@@ -591,15 +590,15 @@ class MainWindow(QtWidgets.QMainWindow):
         if area_ingenieria:
             # Estudiante de ejemplo
             estudiante1 = Estudiante(
-                "Juan", "Pérez", "Gómez", "12345678", 
+                "Dairon", "Pérez", "Gómez", "01050245785", 
                 area_ingenieria, "Ingeniería Informática", 3, False
             )
             self.sistema.agregar_usuario(estudiante1)
             
             # Profesor de ejemplo
             profesor1 = Profesor(
-                "María", "López", "Rodríguez", "87654321",
-                area_ingenieria, "Informática", "doctor", "titular", 45
+                "Salustiano", "López", "Rodríguez", "87654321",
+                area_ingenieria, "Math", "doctor", "titular", 45
             )
             self.sistema.agregar_usuario(profesor1)
         
