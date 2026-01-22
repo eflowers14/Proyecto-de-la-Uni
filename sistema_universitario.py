@@ -284,7 +284,7 @@ class MainWindow(QtWidgets.QMainWindow):
     
     def crear_interfaz_programatica(self):
         """Crea la interfaz gráfica programáticamente si no hay archivo .ui"""
-        self.setWindowTitle("Sistema de Gestión Universitaria - POO")
+        self.setWindowTitle("Sistema de Gestión Universitaria")
         self.setGeometry(100, 100, 1200, 700)
         
         # Widget central
